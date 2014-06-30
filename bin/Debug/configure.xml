@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<InitPara xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <initServerIp>192.168.5.131</initServerIp>
+  <initServerPort>9131</initServerPort>
+  <initClientCounts>10</initClientCounts>
+  <IsStart>true</IsStart>
+  <IsGui>false</IsGui>
+</InitPara>

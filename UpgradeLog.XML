@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SocketTool">
+</Property><Property Name="解决方案文件" Value="E:\My DBank\SocketTool\SocketTool.sln">
+</Property><Property Name="Date" Value="2012年11月27日">
+</Property><Property Name="Time" Value="20:59:57">
+</Property></Properties><Event ErrorLevel="0" Project="SocketTool" Source="SocketTool.csproj" Description="项目文件已成功备份为 E:\My DBank\SocketTool\Backup\SocketTool.csproj">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\BitConverter.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\BitConverter.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\CommTcpClient.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\CommTcpClient.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\CommUdpClient.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\CommUdpClient.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\Connection.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\Connection.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\Delegates.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\Delegates.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\Enumerations.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\Enumerations.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\IPacket.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\IPacket.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\Message.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\Message.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\MessageReceivedEventArgs.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\MessageReceivedEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\MessageSentEventArgs.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\MessageSentEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\NetTest.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\NetTest.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\PacketUtil.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\PacketUtil.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\ParseUtil.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\ParseUtil.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\CommTcpServer.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\CommTcpServer.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\CommUdpServer.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\CommUdpServer.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Core\SockUtils.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Core\SockUtils.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Form1.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Form1.Designer.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Program.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Properties\Resources.Designer.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Properties\Settings.Designer.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Util\Constants.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Util\Constants.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Util\Utils.cs" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Util\Utils.cs">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Properties\Settings.settings" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Form1.resx" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="Properties\Resources.resx" Description="文件已成功备份为 E:\My DBank\SocketTool\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="SocketTool.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="SocketTool" Source="SocketTool.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SocketTool" Source="SocketTool.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

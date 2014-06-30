@@ -1,0 +1,41 @@
+F:\My DBank\新建文件夹\SocketTool\obj\Release\ResolveAssemblyReference.cache
+F:\My DBank\新建文件夹\SocketTool\obj\Release\SocketTool.Form1.resources
+F:\My DBank\新建文件夹\SocketTool\obj\Release\SocketTool.Properties.Resources.resources
+F:\My DBank\新建文件夹\SocketTool\obj\Release\SocketTool.csproj.GenerateResource.Cache
+F:\My DBank\LtCommunication\SocketTool\bin\Release\SocketTool.exe.config
+F:\My DBank\LtCommunication\SocketTool\bin\Release\SocketTool.exe
+F:\My DBank\LtCommunication\SocketTool\bin\Release\SocketTool.pdb
+F:\My DBank\LtCommunication\SocketTool\bin\Release\log4net.dll
+F:\My DBank\LtCommunication\SocketTool\obj\Release\ResolveAssemblyReference.cache
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.MainForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.ClientForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.Properties.Resources.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.ServerForm.resources
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.csproj.GenerateResource.Cache
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.exe
+F:\My DBank\LtCommunication\SocketTool\obj\Release\SocketTool.pdb
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\bin\Release\SocketTool.exe.config
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\obj\Release\SocketTool.exe
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\obj\Release\SocketTool.pdb
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\bin\Release\SocketTool.exe
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\bin\Release\SocketTool.pdb
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\bin\Release\log4net.dll
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\obj\Release\SocketTool.MainForm.resources
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\obj\Release\SocketTool.ClientForm.resources
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\obj\Release\SocketTool.Properties.Resources.resources
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\obj\Release\SocketTool.ServerForm.resources
+C:\Documents and Settings\Administrator.20120727-1550\My Documents\Downloads\SocketTool\obj\Release\SocketTool.csproj.GenerateResource.Cache
+E:\work\SocketTool\bin\Release\SocketTool.exe.config
+E:\work\SocketTool\obj\Release\SocketTool.exe
+E:\work\SocketTool\obj\Release\SocketTool.pdb
+E:\work\SocketTool\bin\Release\SocketTool.exe
+E:\work\SocketTool\bin\Release\SocketTool.pdb
+E:\work\SocketTool\bin\Release\log4net.dll
+E:\work\SocketTool\obj\Release\SocketTool.MainForm.resources
+E:\work\SocketTool\obj\Release\SocketTool.ClientForm.resources
+E:\work\SocketTool\obj\Release\SocketTool.Properties.Resources.resources
+E:\work\SocketTool\obj\Release\SocketTool.ServerForm.resources
+E:\work\SocketTool\obj\Release\SocketTool.csproj.GenerateResource.Cache
+E:\work\SocketTool\obj\Release\SocketTool.ConfDialog.resources
+E:\work\SocketTool\obj\Release\SocketTool.csprojResolveAssemblyReference.cache
