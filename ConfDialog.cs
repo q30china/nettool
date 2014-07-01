@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using SocketTool.Core;
+using System.Threading;
 
 namespace SocketTool
 {
@@ -54,6 +55,7 @@ namespace SocketTool
 
                 si.IsAuto = chkConnAll.Checked;
                 mainform.BulkAddClientFormNode(si.Name, si);
+                
             }
             mainform.Refresh();
             

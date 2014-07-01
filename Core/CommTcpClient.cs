@@ -27,6 +27,10 @@ namespace SocketTool.Core
 
 
         Thread recvThread;
+        public Boolean Isconnect()
+        {
+            return IsConnected;
+        }
 
         public CommTcpClient()
         {

@@ -16,6 +16,7 @@ namespace SocketTool.Core
 
         public IPEndPoint ClientIP { get; set; }
 
+        public Boolean IsConnected { get; set; }
 
         public UdpConnection()
         {

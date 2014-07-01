@@ -21,6 +21,10 @@ namespace SocketTool.Core
         public Boolean IsConnected { get; set; }
         private Thread receiver;
 
+        public Boolean Isconnect()
+        {
+            return IsConnected;
+        }
         public void Init(String serverIp, int port)
         {
             this.ServerIP = serverIp;

@@ -219,8 +219,10 @@ namespace SocketTool
                             {
                                 if (cliList[i].SocketInfo.Name == ctn.Name)
                                 {
-                                    if (cliList[i].stopflag == true)
+                                    if (cliList[i].SocketInfo.Stopflag == true)
                                         ctn.ImageIndex = 4;
+                                    else
+                                        ctn.ImageIndex = 7;
 
                                 }
 

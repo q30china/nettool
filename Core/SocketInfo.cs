@@ -38,6 +38,8 @@ namespace SocketTool.Core
         //Error Message Buf
         public string ErrorMsg { get; set; }
 
+        public Boolean Stopflag { get; set; }
+
         public SocketInfo()
         {
             Format = "AscII";

@@ -76,6 +76,9 @@ namespace SocketTool
             continueSend = true;
             while (continueSend)
             {
+                if (this.socketClient.Isconnect())
+                   this.SocketInfo.Stopflag = false;
+
                 byte[] data = System.Text.Encoding.Default.GetBytes(sendContent);
                 data = ParseUtil.ToByesByHex(sendContent);
                 try
@@ -98,13 +101,16 @@ namespace SocketTool
         }
         public void ListenMessage(object o, ReceivedEventArgs e)
         {
+                
                 try
                 {
                     ReceivedHandler d = new ReceivedHandler(ListenMessage);
                     byte[] aa = e.Data;
                     this.SocketInfo.recData = aa;
                     this.SocketInfo.IsRefresh = true;
+                    this.SocketInfo.Stopflag = false;
                     
+                   
                 }
                 catch (System.Exception ex)
                 {
@@ -118,11 +124,12 @@ namespace SocketTool
             string errorMsg = "[" + e.ErrorCode + "]" + SocketUtil.DescrError(e.ErrorCode) + " -> "+ e.Message;
             this.SocketInfo.ErrorMsg = errorMsg;
             this.SocketInfo.IsRefreshError = true;
-           // ListenMessage((int)o, "Socket错误", errorMsg);
-           // 
+
            //connect again
             byte[] data = System.Text.Encoding.Default.GetBytes(sendContent);
             data = ParseUtil.ToByesByHex(sendContent);
+            this.SocketInfo.Stopflag = true;
+            stopflag = false;
 
             if(!stopflag)
             {
@@ -134,7 +141,7 @@ namespace SocketTool
                     this.SocketInfo.IsRefreshSend = true;
 
                 }
-                else if (fcounts < 20)
+                else if (fcounts < 10)
                 {
                     Thread.Sleep(3000);
                     this.SocketInfo.ErrorMsg = "Close the Socket, and connect again! " + SocketInfo.ServerIp + ":" + SocketInfo.Port.ToString();
@@ -142,10 +149,12 @@ namespace SocketTool
                     socketClient.Close();
                     socketClient.Send(data);
                     this.SocketInfo.IsRefreshSend = true;
+                    fcounts++;
 
                 }
                 else
                     stopflag = true;
+
             }
 
             

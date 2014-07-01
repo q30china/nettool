@@ -15,6 +15,9 @@ namespace SocketTool.Core
 
         event SocketErrorHandler OnSocketError;
 
+      
         void Close();
+
+        Boolean Isconnect();
     }
 }
