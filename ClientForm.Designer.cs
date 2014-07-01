@@ -53,10 +53,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PacketView = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -84,7 +84,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(901, 561);
             this.panel1.TabIndex = 1;
@@ -96,7 +96,7 @@
             this.cbLog.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cbLog.ForeColor = System.Drawing.Color.Maroon;
             this.cbLog.Location = new System.Drawing.Point(227, 224);
-            this.cbLog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbLog.Margin = new System.Windows.Forms.Padding(4);
             this.cbLog.Name = "cbLog";
             this.cbLog.Size = new System.Drawing.Size(194, 19);
             this.cbLog.TabIndex = 29;
@@ -106,7 +106,7 @@
             // btnOpenLog
             // 
             this.btnOpenLog.Location = new System.Drawing.Point(453, 218);
-            this.btnOpenLog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnOpenLog.Margin = new System.Windows.Forms.Padding(4);
             this.btnOpenLog.Name = "btnOpenLog";
             this.btnOpenLog.Size = new System.Drawing.Size(128, 31);
             this.btnOpenLog.TabIndex = 28;
@@ -117,7 +117,7 @@
             // btnClearLog
             // 
             this.btnClearLog.Location = new System.Drawing.Point(107, 218);
-            this.btnClearLog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClearLog.Margin = new System.Windows.Forms.Padding(4);
             this.btnClearLog.Name = "btnClearLog";
             this.btnClearLog.Size = new System.Drawing.Size(100, 31);
             this.btnClearLog.TabIndex = 27;
@@ -140,9 +140,9 @@
             this.groupBox2.Controls.Add(this.rbAscII);
             this.groupBox2.Controls.Add(this.rbHex);
             this.groupBox2.Location = new System.Drawing.Point(35, 60);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(267, 36);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
@@ -153,7 +153,7 @@
             this.rbAscII.AutoSize = true;
             this.rbAscII.Checked = true;
             this.rbAscII.Location = new System.Drawing.Point(76, 12);
-            this.rbAscII.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbAscII.Margin = new System.Windows.Forms.Padding(4);
             this.rbAscII.Name = "rbAscII";
             this.rbAscII.Size = new System.Drawing.Size(83, 19);
             this.rbAscII.TabIndex = 4;
@@ -165,7 +165,7 @@
             // 
             this.rbHex.AutoSize = true;
             this.rbHex.Location = new System.Drawing.Point(171, 12);
-            this.rbHex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbHex.Margin = new System.Windows.Forms.Padding(4);
             this.rbHex.Name = "rbHex";
             this.rbHex.Size = new System.Drawing.Size(74, 19);
             this.rbHex.TabIndex = 5;
@@ -177,9 +177,9 @@
             this.groupBox1.Controls.Add(this.rbUdp);
             this.groupBox1.Controls.Add(this.rbTcp);
             this.groupBox1.Location = new System.Drawing.Point(357, 60);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(229, 35);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
@@ -189,7 +189,7 @@
             // 
             this.rbUdp.AutoSize = true;
             this.rbUdp.Location = new System.Drawing.Point(136, 12);
-            this.rbUdp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbUdp.Margin = new System.Windows.Forms.Padding(4);
             this.rbUdp.Name = "rbUdp";
             this.rbUdp.Size = new System.Drawing.Size(52, 19);
             this.rbUdp.TabIndex = 15;
@@ -201,7 +201,7 @@
             this.rbTcp.AutoSize = true;
             this.rbTcp.Checked = true;
             this.rbTcp.Location = new System.Drawing.Point(73, 12);
-            this.rbTcp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbTcp.Margin = new System.Windows.Forms.Padding(4);
             this.rbTcp.Name = "rbTcp";
             this.rbTcp.Size = new System.Drawing.Size(52, 19);
             this.rbTcp.TabIndex = 14;
@@ -213,7 +213,7 @@
             // 
             this.btnDisconnect.Enabled = false;
             this.btnDisconnect.Location = new System.Drawing.Point(543, 109);
-            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(4);
             this.btnDisconnect.Name = "btnDisconnect";
             this.btnDisconnect.Size = new System.Drawing.Size(100, 31);
             this.btnDisconnect.TabIndex = 17;
@@ -234,7 +234,7 @@
             // btnSend
             // 
             this.btnSend.Location = new System.Drawing.Point(427, 109);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(100, 31);
             this.btnSend.TabIndex = 11;
@@ -247,7 +247,7 @@
             this.rtSendData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rtSendData.Location = new System.Drawing.Point(81, 148);
-            this.rtSendData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtSendData.Margin = new System.Windows.Forms.Padding(4);
             this.rtSendData.Name = "rtSendData";
             this.rtSendData.Size = new System.Drawing.Size(815, 62);
             this.rtSendData.TabIndex = 10;
@@ -267,7 +267,7 @@
             // 
             this.txtInterval.Enabled = false;
             this.txtInterval.Location = new System.Drawing.Point(235, 109);
-            this.txtInterval.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtInterval.Margin = new System.Windows.Forms.Padding(4);
             this.txtInterval.Name = "txtInterval";
             this.txtInterval.Size = new System.Drawing.Size(51, 25);
             this.txtInterval.TabIndex = 8;
@@ -287,7 +287,7 @@
             // 
             this.cbAutoSend.AutoSize = true;
             this.cbAutoSend.Location = new System.Drawing.Point(81, 115);
-            this.cbAutoSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbAutoSend.Margin = new System.Windows.Forms.Padding(4);
             this.cbAutoSend.Name = "cbAutoSend";
             this.cbAutoSend.Size = new System.Drawing.Size(89, 19);
             this.cbAutoSend.TabIndex = 6;
@@ -298,7 +298,7 @@
             // txtPort
             // 
             this.txtPort.Location = new System.Drawing.Point(279, 25);
-            this.txtPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(4);
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(51, 25);
             this.txtPort.TabIndex = 3;
@@ -317,7 +317,7 @@
             // txtIP
             // 
             this.txtIP.Location = new System.Drawing.Point(81, 25);
-            this.txtIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIP.Margin = new System.Windows.Forms.Padding(4);
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(132, 25);
             this.txtIP.TabIndex = 1;
@@ -350,17 +350,23 @@
             this.PacketView.GridLines = true;
             this.PacketView.LabelEdit = true;
             this.PacketView.Location = new System.Drawing.Point(3, 251);
-            this.PacketView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PacketView.Margin = new System.Windows.Forms.Padding(4);
             this.PacketView.Name = "PacketView";
             this.PacketView.Size = new System.Drawing.Size(893, 294);
             this.PacketView.TabIndex = 2;
             this.PacketView.UseCompatibleStateImageBehavior = false;
             this.PacketView.View = System.Windows.Forms.View.Details;
+            this.PacketView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.PacketView_MouseDoubleClick);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "序号";
             this.columnHeader1.Width = 54;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "R/S";
+            this.columnHeader2.Width = 70;
             // 
             // columnHeader3
             // 
@@ -376,11 +382,6 @@
             // 
             this.columnHeader5.Text = "字节数";
             // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "R/S";
-            this.columnHeader2.Width = 70;
-            // 
             // ClientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -389,7 +390,7 @@
             this.Controls.Add(this.PacketView);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ClientForm";

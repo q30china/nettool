@@ -483,6 +483,30 @@ namespace SocketTool
              }
              
           }
+
+         private void PacketView_MouseDoubleClick(object sender, MouseEventArgs e)
+         {
+             //get the current information
+             //PacketView.SelectedItems[0].SubItems[3].Text   this.SocketInfo.recData
+             //MessageBox.Show(this.SocketInfo.Name + "\n" + "Recevie: " +  ;
+             //
+             int length = this.SocketInfo.recData.Length;
+
+             string msg = ParseUtil.ParseString(this.SocketInfo.recData, length);
+             if (rbHex.Checked)
+                 msg = ParseUtil.ToHexString(this.SocketInfo.recData, length);
+             
+             if (this.SocketInfo.Stopflag == false)
+                 msg = msg + " Connected!";
+             else
+                 msg = msg + "Disconneted!";
+
+             MessageBox.Show(this.SocketInfo.Name + "\n" + "Recevie: " + msg) ;
+
+
+             //this.socketClient.Isconnect
+             
+         }
         
         
     }
