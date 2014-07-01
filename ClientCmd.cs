@@ -104,13 +104,13 @@ namespace SocketTool
                 
                 try
                 {
-                    ReceivedHandler d = new ReceivedHandler(ListenMessage);
+                    //ReceivedHandler d = new ReceivedHandler(ListenMessage);
+                    //this.Invoke(d, new object[] { o, e });
                     byte[] aa = e.Data;
                     this.SocketInfo.recData = aa;
                     this.SocketInfo.IsRefresh = true;
                     this.SocketInfo.Stopflag = false;
-                    
-                   
+                  
                 }
                 catch (System.Exception ex)
                 {

@@ -86,7 +86,6 @@ namespace SocketTool.Core
 
         public void Reconnect()
         {
-
             this.Close();
             this.Connect();
             

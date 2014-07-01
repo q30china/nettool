@@ -490,6 +490,16 @@ namespace SocketTool
              //PacketView.SelectedItems[0].SubItems[3].Text   this.SocketInfo.recData
              //MessageBox.Show(this.SocketInfo.Name + "\n" + "Recevie: " +  ;
              //
+             //
+
+             string aa = this.SocketInfo.ServerIp  + " : "+ this.SocketInfo.Port  + "\n" + "Send:" + this.SocketInfo.Data;
+             MessageBox.Show(aa);
+
+
+             //
+             MessageBox.Show("Receive data length: " + this.SocketInfo.recData.Length.ToString());
+
+             return;
              int length = this.SocketInfo.recData.Length;
 
              string msg = ParseUtil.ParseString(this.SocketInfo.recData, length);
