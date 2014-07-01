@@ -486,36 +486,24 @@ namespace SocketTool
 
          private void PacketView_MouseDoubleClick(object sender, MouseEventArgs e)
          {
-             //get the current information
-             //PacketView.SelectedItems[0].SubItems[3].Text   this.SocketInfo.recData
-             //MessageBox.Show(this.SocketInfo.Name + "\n" + "Recevie: " +  ;
-             //
-             //
+             string msg1 = "";
+             if (this.SocketInfo.Stopflag == false)
+                 msg1 = msg1 + " Connected!";
+             else
+                 msg1 = msg1 + "Disconneted!";
 
-             string aa = this.SocketInfo.ServerIp  + " : "+ this.SocketInfo.Port  + "\n" + "Send:" + this.SocketInfo.Data;
-             MessageBox.Show(aa);
+             string aa = "--->" + this.SocketInfo.ServerIp + " : " + this.SocketInfo.Port;
+             MessageBox.Show("Send:" + this.SocketInfo.Data + "\n" + " Socket ->" + msg1 , this.SocketInfo.Name + " " + aa, MessageBoxButtons.OK);
 
-
-             //
-             MessageBox.Show("Receive data length: " + this.SocketInfo.recData.Length.ToString());
-
-             return;
              int length = this.SocketInfo.recData.Length;
 
              string msg = ParseUtil.ParseString(this.SocketInfo.recData, length);
              if (rbHex.Checked)
                  msg = ParseUtil.ToHexString(this.SocketInfo.recData, length);
-             
-             if (this.SocketInfo.Stopflag == false)
-                 msg = msg + " Connected!";
-             else
-                 msg = msg + "Disconneted!";
-
-             MessageBox.Show(this.SocketInfo.Name + "\n" + "Recevie: " + msg) ;
 
 
-             //this.socketClient.Isconnect
-             
+             MessageBox.Show(msg, this.SocketInfo.Name, MessageBoxButtons.OK);
+
          }
         
         
