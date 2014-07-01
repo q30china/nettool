@@ -26,12 +26,16 @@ namespace SocketTool.Core
 
         public byte [] recData { get; set; }
 
+        //Flag of refresh ReceiveBuf
         public Boolean IsRefresh { get; set; }
 
+        //Flag of refresh SendBuf
         public Boolean IsRefreshSend { get; set; }
 
+        //Flag of refresh ErrorMessageBuf
         public Boolean IsRefreshError { get; set; }
 
+        //Error Message Buf
         public string ErrorMsg { get; set; }
 
         public SocketInfo()

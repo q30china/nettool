@@ -42,7 +42,6 @@ E:\github\nettool\obj\Debug\NetTool.pdb
 E:\github\nettool\bin\Debug\NetTool.exe
 E:\github\nettool\bin\Debug\NetTool.pdb
 E:\github\nettool\bin\Debug\log4net.dll
-E:\github\nettool\obj\Debug\NetTool.csprojResolveAssemblyReference.cache
 E:\github\nettool\obj\Debug\SocketTool.ConfDialog.resources
 E:\github\nettool\obj\Debug\SocketTool.MainForm.resources
 E:\github\nettool\obj\Debug\SocketTool.ClientForm.resources
