@@ -113,8 +113,6 @@ namespace SocketTool
             string errorMsg = "[" + e.ErrorCode + "]" + SocketUtil.DescrError(e.ErrorCode) + " -> "+ e.Message;
             this.SocketInfo.ErrorMsg = errorMsg;
             this.SocketInfo.IsRefreshError = true;
-
-
            // ListenMessage((int)o, "Socket错误", errorMsg);
 
         }

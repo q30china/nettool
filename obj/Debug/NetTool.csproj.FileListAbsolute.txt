@@ -36,6 +36,7 @@ E:\NetTool\obj\Debug\SocketTool.ClientForm.resources
 E:\NetTool\obj\Debug\NetTool.Properties.Resources.resources
 E:\NetTool\obj\Debug\SocketTool.ServerForm.resources
 E:\NetTool\obj\Debug\NetTool.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 E:\github\nettool\bin\Debug\NetTool.exe.config
 E:\github\nettool\obj\Debug\NetTool.exe
 E:\github\nettool\obj\Debug\NetTool.pdb
@@ -48,3 +49,18 @@ E:\github\nettool\obj\Debug\SocketTool.ClientForm.resources
 E:\github\nettool\obj\Debug\NetTool.Properties.Resources.resources
 E:\github\nettool\obj\Debug\SocketTool.ServerForm.resources
 E:\github\nettool\obj\Debug\NetTool.csproj.GenerateResource.Cache
+=======
+D:\hexing\github\NetTool\bin\Debug\NetTool.exe.config
+D:\hexing\github\NetTool\obj\Debug\NetTool.exe
+D:\hexing\github\NetTool\obj\Debug\NetTool.pdb
+D:\hexing\github\NetTool\bin\Debug\NetTool.exe
+D:\hexing\github\NetTool\bin\Debug\NetTool.pdb
+D:\hexing\github\NetTool\bin\Debug\log4net.dll
+D:\hexing\github\NetTool\obj\Debug\NetTool.csprojResolveAssemblyReference.cache
+D:\hexing\github\NetTool\obj\Debug\SocketTool.ConfDialog.resources
+D:\hexing\github\NetTool\obj\Debug\SocketTool.MainForm.resources
+D:\hexing\github\NetTool\obj\Debug\SocketTool.ClientForm.resources
+D:\hexing\github\NetTool\obj\Debug\NetTool.Properties.Resources.resources
+D:\hexing\github\NetTool\obj\Debug\SocketTool.ServerForm.resources
+D:\hexing\github\NetTool\obj\Debug\NetTool.csproj.GenerateResource.Cache
+>>>>>>> ad6a1c7deec3c9c866765f032e34718b2757cc91
