@@ -60,6 +60,7 @@ namespace SocketTool.Core
 
                 tcpClient.Connect(ServerIP, Port);
                 tcpClient.Client.Blocking = true;
+                //receive time out need to set
                 //tcpClient.Client.ReceiveTimeout = 1000;
                 tcpClient.Client.LingerState = new LingerOption(true, 0);
                 recvThread = new Thread(new ThreadStart(RecvRequestFromClient));

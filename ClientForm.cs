@@ -390,7 +390,7 @@ namespace SocketTool
             this.cbAutoSend.Checked = this.SocketInfo.IsAuto;
             this.cbAutoSend.Enabled = false;
             this.btnSend.Enabled = false;
-            this.btnDisconnect.Enabled = false;
+            //this.btnDisconnect.Enabled = false;
             this.rbAscII.Enabled = false;
             this.rbHex.Enabled = false;
             this.rbTcp.Enabled = false;
