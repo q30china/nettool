@@ -42,6 +42,7 @@
             this.tsbLoadDefault = new System.Windows.Forms.ToolStripButton();
             this.tsbQuit = new System.Windows.Forms.ToolStripButton();
             this.tsbAbout = new System.Windows.Forms.ToolStripButton();
+            this.tsbRefresh = new System.Windows.Forms.ToolStripButton();
             this.tabControl1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -120,7 +121,8 @@
             this.tsbDelete,
             this.tsbLoadDefault,
             this.tsbQuit,
-            this.tsbAbout});
+            this.tsbAbout,
+            this.tsbRefresh});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1107, 27);
@@ -187,6 +189,15 @@
             this.tsbAbout.Size = new System.Drawing.Size(59, 24);
             this.tsbAbout.Text = "关于";
             // 
+            // tsbRefresh
+            // 
+            this.tsbRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("tsbRefresh.Image")));
+            this.tsbRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbRefresh.Name = "tsbRefresh";
+            this.tsbRefresh.Size = new System.Drawing.Size(73, 24);
+            this.tsbRefresh.Text = "刷新状态";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -225,6 +236,7 @@
         private System.Windows.Forms.ToolStripButton bukAddClient;
         private System.Windows.Forms.ToolStripButton tsbQuit;
         private System.Windows.Forms.ToolStripButton tsbLoadDefault;
+        private System.Windows.Forms.ToolStripButton tsbRefresh;
     }
 }
 

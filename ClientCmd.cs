@@ -26,6 +26,10 @@ namespace SocketTool
 
         public SocketInfo SocketInfo { get; set; }
 
+        public int fcounts = 0;
+
+        public Boolean stopflag = false;
+
         public void SendData(object sender, EventArgs e)
         {
   
@@ -78,10 +82,12 @@ namespace SocketTool
                 {
                     socketClient.Send(data);
                     this.SocketInfo.IsRefreshSend = true;
+                    fcounts = 0;
 
                 }
                 catch (Exception ex)
                 {
+                    //deal with the error
                     break;
                 }
                 if (IsAutoSend == false)
@@ -92,7 +98,6 @@ namespace SocketTool
         }
         public void ListenMessage(object o, ReceivedEventArgs e)
         {
-
                 try
                 {
                     ReceivedHandler d = new ReceivedHandler(ListenMessage);
@@ -114,6 +119,40 @@ namespace SocketTool
             this.SocketInfo.ErrorMsg = errorMsg;
             this.SocketInfo.IsRefreshError = true;
            // ListenMessage((int)o, "Socket错误", errorMsg);
+           // 
+           //connect again
+            byte[] data = System.Text.Encoding.Default.GetBytes(sendContent);
+            data = ParseUtil.ToByesByHex(sendContent);
+
+            if(!stopflag)
+            {
+                if (fcounts < 3)
+                {
+                    fcounts++;
+                    Thread.Sleep(3000);
+                    socketClient.Send(data);
+                    this.SocketInfo.IsRefreshSend = true;
+
+                }
+                else if (fcounts < 20)
+                {
+                    Thread.Sleep(3000);
+                    this.SocketInfo.ErrorMsg = "Close the Socket, and connect again! " + SocketInfo.ServerIp + ":" + SocketInfo.Port.ToString();
+                    this.SocketInfo.IsRefreshError = true;
+                    socketClient.Close();
+                    socketClient.Send(data);
+                    this.SocketInfo.IsRefreshSend = true;
+
+                }
+                else
+                    stopflag = true;
+            }
+
+            
+            //if send data ok, then go out of here.
+            //if test 3 times, please close the socket and connect agian.
+
+
 
         }
         

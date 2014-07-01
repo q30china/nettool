@@ -207,6 +207,27 @@ namespace SocketTool
                     if( tabControl1.TabCount == 1 ) 
                       load();
                 }
+                else if (e.ClickedItem.Name == "tsbRefresh")
+                {
+                    //for (TreeNode tn in deviceTree)
+                    //deviceTree.SelectedNode.ImageIndex = 4;
+                    foreach (TreeNode tn in this.deviceTree.Nodes)
+                    {
+                        foreach (TreeNode ctn in tn.Nodes)
+                        {
+                            for (int i = 0; i < cliList.Count; i++)
+                            {
+                                if (cliList[i].SocketInfo.Name == ctn.Name)
+                                {
+                                    if (cliList[i].stopflag == true)
+                                        ctn.ImageIndex = 4;
+
+                                }
+
+                            }
+                        }
+                    }
+                }
             }
         }
 
