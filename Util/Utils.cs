@@ -234,9 +234,9 @@ namespace SocketTool
         /// <returns>Encrypted or decrypted string</returns>
         public static string XORCrypt(string data, string key)
         {
-			//Null key? Don't encrypt.
-			if(key == "")
-				return data;
+            //Null key? Don't encrypt.
+            if (key == "")
+                return data;
 
             string retValue = "";
 
@@ -262,7 +262,7 @@ namespace SocketTool
         /// Generates a random encryption key
         /// </summary>
         /// <returns>Randomly generated encryption key</returns>
-        public static string GenerateEncryptionKey( )
+        public static string GenerateEncryptionKey()
         {
             int size = 40; //320 bit
             StringBuilder builder = new StringBuilder();
@@ -276,27 +276,27 @@ namespace SocketTool
             return builder.ToString();
         }
 
-		/// <summary>
-		/// Returns a string array containing all local IP addresses
-		/// </summary>
-		public static string[] GetLocalAddresses()
-		{
-			// Get host name
-			string strHostName = Dns.GetHostName();
+        /// <summary>
+        /// Returns a string array containing all local IP addresses
+        /// </summary>
+        public static string[] GetLocalAddresses()
+        {
+            // Get host name
+            string strHostName = Dns.GetHostName();
 
-			// Find host by name
-			IPHostEntry iphostentry = Dns.GetHostEntry(strHostName);
+            // Find host by name
+            IPHostEntry iphostentry = Dns.GetHostEntry(strHostName);
 
-			string[] retval = new string[iphostentry.AddressList.Length];
+            string[] retval = new string[iphostentry.AddressList.Length];
 
-			int i = 0;
-			foreach (IPAddress ipaddress in iphostentry.AddressList)
-			{
-				retval[i] = ipaddress.ToString();
-				i++;
-			}
-			return retval;
-		}
+            int i = 0;
+            foreach (IPAddress ipaddress in iphostentry.AddressList)
+            {
+                retval[i] = ipaddress.ToString();
+                i++;
+            }
+            return retval;
+        }
 
         public static string PrintFrame(byte[] frame)
         {
@@ -515,13 +515,121 @@ namespace SocketTool
             }
 
             //校验码
-            frame[index++] = CheckSum(frame, 6, index-6);
+            frame[index++] = CheckSum(frame, 6, index - 6);
 
             frame[index++] = 0x16;
 
             return frame;
         }
 
+        /// <summary>
+        /// make alarm frame
+        /// </summary>
+        /// <param name="rtuAddr"></param>
+        /// <param name="msta"></param>
+        /// <param name="seq"></param>
+        /// <param name="control"></param>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public static byte[] AssemblyFrameAlarm(string rtuAddr,
+          byte pointid, byte alarmid, byte alarmtype,
+          byte[] data)
+        {
+
+            byte[] frame;
+            int frameLength;
+
+            long nrtuAddr;
+
+            nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
+
+            //frameLength = (data == null) ? 16 : 16 + data.Length;
+            frameLength = 40;
+
+            frame = new byte[frameLength];
+            int index = 0;
+
+            frame[index++] = 0x68;
+
+            frame[index++] = 0x82;
+            frame[index++] = 0x00;
+            frame[index++] = 0x82;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x68;
+            frame[index++] = 0xC4;
+
+
+            //集中器地址
+            frame[index++] = (byte)((nrtuAddr >> 16) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 24) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 8) & 0xFF);
+
+            //控制码
+            frame[index++] = 0x00;
+            frame[index++] = 0x0E;
+            frame[index++] = 0x6D;
+
+            //
+            frame[index++] = 0x00;
+            frame[index++] = 0x00;
+            frame[index++] = 0x01;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x63;
+            frame[index++] = 0x00;
+            frame[index++] = 0x62;
+            frame[index++] = 0x63;
+
+            // 28 标准事件记录  2B 电网事件记录
+            frame[index++] = alarmtype;
+
+            //事件数据长度
+            frame[index++] = 0x0E;
+
+            DateTime dt = DateTime.Now;
+            byte[] datebytes = DateTimeToByteArray(dt);
+
+            for (int j = 5; j > 0; j--)
+                frame[index++] = datebytes[j - 1];
+            //采集器采集时间  分 时 日 月 年
+
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x06;
+            //frame[index++] = 0x14;
+
+            //测量点号码
+            frame[index++] = pointid;
+            frame[index++] = 0x00;
+
+            //表事件
+            frame[index++] = alarmid;
+
+
+            //表计事项实际产生时间 分 时 日 月 年 秒
+
+            for (int j = 5; j > 0; j--)
+                frame[index++] = datebytes[j - 1];
+
+            frame[index++] = datebytes[5];
+            //frame[index++] = 0x37;
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x06;
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+
+            //校验码
+            frame[index++] = CheckSum(frame, 6, index - 6);
+
+            frame[index++] = 0x16;
+
+            return frame;
+
+        }
         /// <summary>
         /// 求和校验 
         /// </summary>
@@ -540,7 +648,7 @@ namespace SocketTool
         {
             byte[] data = new Byte[len];
 
-            switch(type)
+            switch (type)
             {
                 case 0x01: //登录
 
@@ -559,13 +667,75 @@ namespace SocketTool
         {
             int index = 0;
             StringBuilder stringBuilder = new StringBuilder();
-            while (index < str.Length/2)
+            while (index < str.Length / 2)
             {
 
-                stringBuilder.Append(str.Substring(index*2,2) + " ");
+                stringBuilder.Append(str.Substring(index * 2, 2) + " ");
                 index++;
             }
             return stringBuilder.ToString();
+        }
+
+        /// <summary>
+        /// INT转化为单字节HEX
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public static byte IntToHEX(int data)
+        {
+            return (byte)data;
+        }
+        public static byte[] IntToBytes(int data, char c, int len)
+        {
+            int num = len - 1;
+            byte[] thisbyte = new byte[len];
+            int enters;
+            switch (c)
+            {
+                case 'H':
+                case 'h':
+                    enters = 16;
+                    break;
+                case 'B':
+                case 'b':
+                    enters = 10;
+                    break;
+                default:
+                    enters = 10;
+                    break;
+            }
+            while (data > 0)
+            {
+                if (num < 0)
+                    throw new ArgumentException("Parameter is outside field ");
+                thisbyte[num] = (byte)((data % (enters * enters)) / enters * 16 + (data % (enters * enters)) % enters);
+                data /= (enters * enters);
+                num--;
+            }
+            while (num >= 0)
+            {
+                thisbyte[num] = 0;
+                num--;
+            }
+            return thisbyte;
+        }
+        public static byte IntToBCDByte(int n)
+        {
+
+            return (byte)((n % 10) + (n / 10 % 10) * 0x10);
+
+        }
+
+        public static byte[] DateTimeToByteArray(DateTime time)
+        {
+
+            return new byte[]{ IntToBCDByte(time.Year),
+                        IntToBCDByte(time.Month),
+                        IntToBCDByte(time.Day),
+                        IntToBCDByte(time.Hour),
+                        IntToBCDByte(time.Minute),
+                        IntToBCDByte(time.Second)
+                };
         }
     }
 }

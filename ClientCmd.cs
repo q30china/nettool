@@ -12,6 +12,7 @@ namespace SocketTool
         private static log4net.ILog logger = log4net.LogManager.GetLogger(typeof(ClientForm));
         private IClient socketClient = new CommTcpClient();
         private Thread SendOutgoingThread;
+        private Thread GetSenddataThread;
 
         private int sendInterval = 0;
         private Boolean IsAutoSend;
@@ -26,10 +27,13 @@ namespace SocketTool
 
         public SocketInfo SocketInfo { get; set; }
 
+        private List<string> datalist = new List<string>();
+
         public int fcounts = 0;
 
         public Boolean stopflag = false;
 
+        private Boolean firstflag = true;
         public void SendData(object sender, EventArgs e)
         {
   
@@ -69,6 +73,9 @@ namespace SocketTool
             SendOutgoingThread = new Thread(new ThreadStart(SendThreadFunc));
             SendOutgoingThread.Start();
 
+            GetSenddataThread = new Thread(new ThreadStart(GetDataThreadFunc));
+            GetSenddataThread.Start();
+
         }
      
         private void SendThreadFunc()
@@ -77,27 +84,89 @@ namespace SocketTool
             while (continueSend)
             {
                 if (this.socketClient.Isconnect())
-                   this.SocketInfo.Stopflag = false;
+                    this.SocketInfo.Stopflag = false;
 
-                byte[] data = System.Text.Encoding.Default.GetBytes(sendContent);
-                data = ParseUtil.ToByesByHex(sendContent);
-                try
+                if (firstflag)
                 {
+                    //send heartbeat
+
+                    byte[] data = System.Text.Encoding.Default.GetBytes(sendContent);
+                    data = ParseUtil.ToByesByHex(sendContent);
                     socketClient.Send(data);
-                    this.SocketInfo.IsRefreshSend = true;
-                    fcounts = 0;
 
+                    this.SocketInfo.Data = sendContent;
+                    this.SocketInfo.IsRefreshSend = true;
+                    Thread.Sleep(1000);
+                    firstflag = false;
                 }
-                catch (Exception ex)
+
+                for (int j = 0; j < datalist.Count; j++)
                 {
-                    //deal with the error
-                    break;
-                }
-                if (IsAutoSend == false)
-                    break;
+
+                    sendContent = datalist[j];
+
+                    byte[] data = System.Text.Encoding.Default.GetBytes(sendContent);
+                    data = ParseUtil.ToByesByHex(sendContent);
+                    try
+                    {
+                        socketClient.Send(data);
+                        this.SocketInfo.Data = sendContent;
+                        this.SocketInfo.IsRefreshSend = true;
+                        fcounts = 0;
+                        Thread.Sleep(500); //here is very important
+
+                    }
+                    catch (Exception ex)
+                    {
+                        //deal with the error
+                        break;
+                    }
+                    if (IsAutoSend == false)
+                        break;
+                } //end for
+
                 Thread.Sleep(sendInterval);
 
             }
+                
+        }
+
+        /// <summary>
+        /// Get the Send data according to the Config files.
+        /// </summary>
+        private void GetDataThreadFunc()
+        {
+            // 1. Alarm
+            // 2. Data
+            datalist.Clear();
+            // how many meters, how many alarms, how many data.
+            // assembly frame and load into datalist string.
+
+            int metercounts = 10;
+            int[] alarmcode = new int[] { 1, 2, 3 };
+            byte[] temp = new byte[] { 11, 22, 33 };
+            string msg = "";
+
+            for (int ii = 2; ii < metercounts; ii++)
+            {
+                for (int i = 3; i < 60; i++)
+                {
+
+                    msg = Util.ConverByteToString(Util.AssemblyFrameAlarm(this.SocketInfo.Name, Util.IntToHEX(ii), Util.IntToHEX(i), 0x28, temp));
+                    datalist.Add(msg);
+                }
+            }
+
+
+            //for(int i=0; i< metercounts ; i++)
+            //    for(int j =0; j < 3; j++)
+            //    {
+            //       msg = Util.ConverByteToString( Util.AssemblyFrameAlarm(this.SocketInfo.Name, 0x06, 0x31, 0x28,temp));
+            //       datalist.Add(msg);
+            //    }
+
+            Thread.Sleep(6000);
+            GetDataThreadFunc();
         }
         public void ListenMessage(object o, ReceivedEventArgs e)
         {
