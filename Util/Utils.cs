@@ -532,8 +532,7 @@ namespace SocketTool
         /// <param name="data"></param>
         /// <returns></returns>
         public static byte[] AssemblyFrameAlarm(string rtuAddr,
-          byte pointid, byte alarmid, byte alarmtype,
-          byte[] data)
+          byte pointid, byte alarmid, byte alarmtype)
         {
 
             byte[] frame;
@@ -630,6 +629,344 @@ namespace SocketTool
             return frame;
 
         }
+
+        /// <summary>
+        /// Make frame of daily frozen data
+        /// </summary>
+        /// <param name="rtuAddr"></param>
+        /// <param name="pointid"></param>
+        /// <param name="alarmid"></param>
+        /// <param name="alarmtype"></param>
+        /// <param name="dtnow"></param>
+        /// <returns></returns>
+        public static byte[] AssemblyFrameDailyFrozen(string rtuAddr,
+          byte pointid, byte alarmid, byte alarmtype, DateTime dtnow)
+        {
+
+            byte[] frame;
+            int frameLength;
+
+            long nrtuAddr;
+
+            nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
+
+            //frameLength = (data == null) ? 16 : 16 + data.Length;
+            frameLength = 40;
+
+            frame = new byte[frameLength];
+            int index = 0;
+
+            frame[index++] = 0x68;
+
+            frame[index++] = 0x82;
+            frame[index++] = 0x00;
+            frame[index++] = 0x82;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x68;
+            frame[index++] = 0xC4;
+
+
+            //集中器地址
+            frame[index++] = (byte)((nrtuAddr >> 16) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 24) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 8) & 0xFF);
+
+            //控制码
+            frame[index++] = 0x00;
+            frame[index++] = 0x0E;
+            frame[index++] = 0x6D;
+
+            //
+            frame[index++] = 0x00;
+            frame[index++] = 0x00;
+            frame[index++] = 0x01;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x63;
+            frame[index++] = 0x00;
+            frame[index++] = 0x62;
+            frame[index++] = 0x63;
+
+            // 28 标准事件记录  2B 电网事件记录
+            frame[index++] = alarmtype;
+
+            //事件数据长度
+            frame[index++] = 0x0E;
+
+            DateTime dt = DateTime.Now;
+            byte[] datebytes = DateTimeToByteArray(dt);
+
+            for (int j = 5; j > 0; j--)
+                frame[index++] = datebytes[j - 1];
+            //采集器采集时间  分 时 日 月 年
+
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x06;
+            //frame[index++] = 0x14;
+
+            //测量点号码
+            frame[index++] = pointid;
+            frame[index++] = 0x00;
+
+            //表事件
+            frame[index++] = alarmid;
+
+
+            //表计事项实际产生时间 分 时 日 月 年 秒
+
+            for (int j = 5; j > 0; j--)
+                frame[index++] = datebytes[j - 1];
+
+            frame[index++] = datebytes[5];
+            //frame[index++] = 0x37;
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x06;
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+
+            //校验码
+            frame[index++] = CheckSum(frame, 6, index - 6);
+
+            frame[index++] = 0x16;
+
+            return frame;
+
+        }
+
+        /// <summary>
+        /// Make frame of daily frozen data
+        /// </summary>
+        /// <param name="rtuAddr"></param>
+        /// <param name="pointid"></param>
+        /// <param name="alarmid"></param>
+        /// <param name="alarmtype"></param>
+        /// <param name="dtnow"></param>
+        /// <returns></returns>
+        public static byte[] AssemblyFrameLoadProfile(string rtuAddr,
+          byte pointid, byte alarmid, byte alarmtype, DateTime dtnow)
+        {
+
+            byte[] frame;
+            int frameLength;
+
+            long nrtuAddr;
+
+            nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
+
+            //frameLength = (data == null) ? 16 : 16 + data.Length;
+            frameLength = 40;
+
+            frame = new byte[frameLength];
+            int index = 0;
+
+            frame[index++] = 0x68;
+
+            frame[index++] = 0x82;
+            frame[index++] = 0x00;
+            frame[index++] = 0x82;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x68;
+            frame[index++] = 0xC4;
+
+
+            //集中器地址
+            frame[index++] = (byte)((nrtuAddr >> 16) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 24) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 8) & 0xFF);
+
+            //控制码
+            frame[index++] = 0x00;
+            frame[index++] = 0x0E;
+            frame[index++] = 0x6D;
+
+            //
+            frame[index++] = 0x00;
+            frame[index++] = 0x00;
+            frame[index++] = 0x01;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x63;
+            frame[index++] = 0x00;
+            frame[index++] = 0x62;
+            frame[index++] = 0x63;
+
+            // 28 标准事件记录  2B 电网事件记录
+            frame[index++] = alarmtype;
+
+            //事件数据长度
+            frame[index++] = 0x0E;
+
+            DateTime dt = DateTime.Now;
+            byte[] datebytes = DateTimeToByteArray(dt);
+
+            for (int j = 5; j > 0; j--)
+                frame[index++] = datebytes[j - 1];
+            //采集器采集时间  分 时 日 月 年
+
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x06;
+            //frame[index++] = 0x14;
+
+            //测量点号码
+            frame[index++] = pointid;
+            frame[index++] = 0x00;
+
+            //表事件
+            frame[index++] = alarmid;
+
+
+            //表计事项实际产生时间 分 时 日 月 年 秒
+
+            for (int j = 5; j > 0; j--)
+                frame[index++] = datebytes[j - 1];
+
+            frame[index++] = datebytes[5];
+            //frame[index++] = 0x37;
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+            //frame[index++] = 0x06;
+            //frame[index++] = 0x14;
+            //frame[index++] = 0x17;
+
+            //校验码
+            frame[index++] = CheckSum(frame, 6, index - 6);
+
+            frame[index++] = 0x16;
+
+            return frame;
+
+        }
+        /// <summary>
+        /// Make frame of daily frozen data
+        /// </summary>
+        /// <param name="rtuAddr"></param>
+        /// <param name="pointid"></param>
+        /// <param name="alarmid"></param>
+        /// <param name="alarmtype"></param>
+        /// <param name="dtnow"></param>
+        /// <returns></returns>
+        public static byte[] AssemblyFrameSendCurrentTime(string rtuAddr, DateTime dtnow)
+        {
+
+            byte[] frame;
+            int frameLength;
+            long nrtuAddr;
+            nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
+
+            frameLength = 26; //all data length for send replay datetime frame
+
+            frame = new byte[frameLength];
+            int index = 0;
+
+            frame[index++] = 0x68;
+
+            frame[index++] = 0x4A;
+            frame[index++] = 0x00;
+            frame[index++] = 0x4A;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x68;
+            frame[index++] = 0x88;
+
+
+            //集中器地址
+            frame[index++] = (byte)((nrtuAddr >> 16) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 24) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 8) & 0xFF);
+
+            //控制码
+            frame[index++] = 0x02;
+            frame[index++] = 0x0C;
+            frame[index++] = 0x6F;
+
+            //
+            frame[index++] = 0x00;
+            frame[index++] = 0x00;
+            frame[index++] = 0x02;
+            frame[index++] = 0x00;
+
+            byte[] datebytes = DateTimeToByteArray(dtnow);
+
+            for (int j = 5; j >= 0; j--)
+                frame[index++] = datebytes[j];
+            //采集器采集时间  秒 分 时 日 月 年
+
+            //校验码
+            frame[index++] = CheckSum(frame, 6, index - 6);
+
+            frame[index++] = 0x16;
+
+            return frame;
+
+        }
+
+        public static Boolean CheckCallTimeFrame(string rtuAddr, byte[] data)
+        {
+
+            byte[] frame;
+            int frameLength;
+            long nrtuAddr;
+            nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
+
+            frameLength = 26; //all data length for send replay datetime frame
+
+            frame = new byte[frameLength];
+            int index = 0;
+
+            frame[index++] = 0x68;
+
+            frame[index++] = 0x4A;
+            frame[index++] = 0x00;
+            frame[index++] = 0x4A;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x68;
+            frame[index++] = 0x88;
+
+
+            //集中器地址
+            frame[index++] = (byte)((nrtuAddr >> 16) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 24) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 8) & 0xFF);
+
+            //控制码
+            frame[index++] = 0x02;
+            frame[index++] = 0x0C;
+            frame[index++] = 0x6F;
+
+            //
+            frame[index++] = 0x00;
+            frame[index++] = 0x00;
+            frame[index++] = 0x02;
+            frame[index++] = 0x00;
+
+            DateTime dt = DateTime.Now;
+            byte[] datebytes = DateTimeToByteArray(dt);
+
+            for (int j = 5; j >= 0; j--)
+                frame[index++] = datebytes[j];
+            //采集器采集时间  秒 分 时 日 月 年
+
+            //校验码
+            frame[index++] = CheckSum(frame, 6, index - 6);
+
+            frame[index++] = 0x16;
+
+            return true;
+
+        }
+
         /// <summary>
         /// 求和校验 
         /// </summary>
@@ -736,6 +1073,89 @@ namespace SocketTool
                         IntToBCDByte(time.Minute),
                         IntToBCDByte(time.Second)
                 };
+        }
+
+        public byte[] PickFrame(byte[] recvbuf, ref int beginIndex, int endIndex)
+        {
+            byte[] frame = new byte[20];
+            int recvLen;
+            int frameLen;
+
+            while (true)
+            {
+                recvLen = (endIndex - beginIndex + recvbuf.Length) % recvbuf.Length;
+                if (recvLen < 14)       //1+2+2+1+1+5+(?)+1+1
+                    return null;
+
+                // 1 校验启动位
+                if (recvbuf[beginIndex] != 0x68)
+                {
+                    beginIndex = (++beginIndex) % recvbuf.Length;
+                    continue;
+                }
+
+                if (recvbuf[(beginIndex + 5) % recvbuf.Length] != 0x68)
+                {
+                    beginIndex = (++beginIndex) % recvbuf.Length;
+                    continue;
+                }
+
+
+                // 2 校验2个长度是否一致
+                //if (recvbuf[(beginIndex + 1) % recvbuf.Length] != recvbuf[(beginIndex + 3) % recvbuf.Length])
+                //{
+                //    beginIndex = (++beginIndex) % recvbuf.Length;
+                //    continue;
+                //}
+                //if (recvbuf[(beginIndex + 2) % recvbuf.Length] != recvbuf[(beginIndex + 4) % recvbuf.Length])
+                //{
+                //    beginIndex = (++beginIndex) % recvbuf.Length;
+                //    continue;
+                //}
+                if (recvbuf.Length != 20)
+                    return null;
+
+
+                // 3 校验规约标识位
+                if ((recvbuf[(beginIndex + 1) % recvbuf.Length] & 0x4B) != 0x01)
+                {
+                    beginIndex = (++beginIndex) % recvbuf.Length;
+                    continue;
+                }
+
+                // 4 检查是否接收到完整的数据帧
+                //frameLen = recvbuf[(beginIndex + 1) % recvbuf.Length] >> 2
+                //    + recvbuf[(beginIndex + 2) % recvbuf.Length] * (1 << 6);
+
+                //if (recvLen < frameLen + 8)
+                //{
+                //    return null;
+                //}
+
+
+                // 5 检查帧结束符 
+                if (recvbuf[(beginIndex + 13) % recvbuf.Length] != 0x16)
+                {
+                    beginIndex = (++beginIndex) % recvbuf.Length;
+                    continue;
+                }
+
+                //  复制完整的报文区
+                for (int i = 0; i < 20; i++)
+                {
+                    frame[i] = recvbuf[(beginIndex + i) % recvbuf.Length];
+                }
+
+                // 6 校验（检出差错时，两帧之间的线路空闲间隔最少需33位）
+                //if (Pr.DAQSvr.Commons.DAQSdk.CheckSum(frame, 6, frameLen) != frame[frame.Length - 2])
+                //{
+
+                //    beginIndex = (beginIndex + 4) % recvbuf.Length;
+                //    continue;
+                //}
+                //beginIndex = (beginIndex + frame.Length) % recvbuf.Length;
+                return frame;
+            }
         }
     }
 }

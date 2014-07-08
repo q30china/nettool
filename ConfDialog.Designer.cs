@@ -202,6 +202,7 @@
             this.txtMeterNum.Name = "txtMeterNum";
             this.txtMeterNum.Size = new System.Drawing.Size(100, 25);
             this.txtMeterNum.TabIndex = 16;
+            this.txtMeterNum.Text = "3";
             // 
             // txtLoadInterval
             // 
@@ -209,6 +210,7 @@
             this.txtLoadInterval.Name = "txtLoadInterval";
             this.txtLoadInterval.Size = new System.Drawing.Size(100, 25);
             this.txtLoadInterval.TabIndex = 17;
+            this.txtLoadInterval.Text = "30";
             // 
             // labMeterNum
             // 

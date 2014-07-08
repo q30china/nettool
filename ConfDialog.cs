@@ -28,6 +28,12 @@ namespace SocketTool
             mainform.ipara.initServerPort = Int32.Parse(txtInitPort.Text);
             mainform.ipara.initClientCounts = txtClientCounts.Text;
             mainform.ipara.IsStart = chkConnAll.Checked;
+            mainform.ipara.IsAlarm = chkMeterAlarm.Checked;
+            mainform.ipara.IsDaily = chkDailyData.Checked;
+            mainform.ipara.IsLoadProfile = chkLoadProfile.Checked;
+            mainform.ipara.metercounts = Int32.Parse(txtMeterNum.Text);
+            mainform.ipara.timeinterval = Int32.Parse(txtLoadInterval.Text);
+            
             if (chkGui.Checked)
                 mainform.ipara.IsGui = true;
             else
@@ -45,6 +51,11 @@ namespace SocketTool
             si.Interval = txtSendDelay.Text;
             si.Format = "Hex";
             si.Protocol = "Tcp";
+            si.IsAlarm = mainform.ipara.IsAlarm;
+            si.IsDaily = mainform.ipara.IsDaily;
+            si.IsLoadProfile = mainform.ipara.IsLoadProfile;
+            si.metercounts = mainform.ipara.metercounts;
+            si.timeinterval = mainform.ipara.timeinterval;
  
             for (int i = 0; i < Int32.Parse(mainform.ipara.initClientCounts); i++)
             {

@@ -40,6 +40,15 @@ namespace SocketTool.Core
 
         public Boolean Stopflag { get; set; }
 
+        //
+        public Boolean IsAlarm { get; set; }
+        public Boolean IsDaily { get; set; }
+        public Boolean IsLoadProfile { get; set; }
+
+        public int metercounts { get; set; }
+        public int timeinterval { get; set; }
+
+
         public SocketInfo()
         {
             Format = "AscII";

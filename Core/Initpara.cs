@@ -12,6 +12,14 @@ namespace SocketTool.Core
         public Boolean IsStart { get; set; }
 
         public Boolean IsGui { get; set; }
+
+        public Boolean IsAlarm { get; set; }
+        public Boolean IsDaily { get; set; }
+        public Boolean IsLoadProfile { get; set; }
+
+        public int metercounts { get; set; }
+        public int timeinterval { get; set; }
+
         public InitPara()
         {
             initServerPort = 9131;

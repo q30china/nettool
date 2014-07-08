@@ -10,3 +10,4 @@ E:\github\nettool\obj\Debug\SocketTool.ServerForm.resources
 E:\github\nettool\obj\Debug\NetTool.csproj.GenerateResource.Cache
 E:\github\nettool\obj\Debug\NetTool.exe
 E:\github\nettool\obj\Debug\NetTool.pdb
+E:\github\nettool\obj\Debug\NetTool.csprojResolveAssemblyReference.cache

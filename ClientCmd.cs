@@ -100,6 +100,8 @@ namespace SocketTool
                     firstflag = false;
                 }
 
+                if (datalist.Count == 0) return;
+
                 for (int j = 0; j < datalist.Count; j++)
                 {
 
@@ -113,7 +115,7 @@ namespace SocketTool
                         this.SocketInfo.Data = sendContent;
                         this.SocketInfo.IsRefreshSend = true;
                         fcounts = 0;
-                        Thread.Sleep(500); //here is very important
+                        Thread.Sleep(100); //here is very important
 
                     }
                     catch (Exception ex)
@@ -124,7 +126,7 @@ namespace SocketTool
                     if (IsAutoSend == false)
                         break;
                 } //end for
-
+                datalist.Clear(); //release the datalist memory
                 Thread.Sleep(sendInterval);
 
             }
@@ -136,37 +138,88 @@ namespace SocketTool
         /// </summary>
         private void GetDataThreadFunc()
         {
-            // 1. Alarm
-            // 2. Data
+
             datalist.Clear();
             // how many meters, how many alarms, how many data.
             // assembly frame and load into datalist string.
 
-            int metercounts = 10;
-            int[] alarmcode = new int[] { 1, 2, 3 };
-            byte[] temp = new byte[] { 11, 22, 33 };
+            int[] alarmcode = new int[] { 60,20 };
+            byte[] alarmtype = new byte[] { 0x28, 0x2F };
+            //byte[] temp = new byte[] { 11, 22, 33 };
             string msg = "";
+            DateTime dtody = DateTime.Now;
+            dtody = dtody.Date;
 
-            for (int ii = 2; ii < metercounts; ii++)
+            if (this.SocketInfo.IsAlarm)
             {
-                for (int i = 3; i < 60; i++)
+                for (int ii = 2; ii < this.SocketInfo.metercounts; ii++)
                 {
+                    for (int i = 3; i < alarmcode[0]; i++)
+                    {
 
-                    msg = Util.ConverByteToString(Util.AssemblyFrameAlarm(this.SocketInfo.Name, Util.IntToHEX(ii), Util.IntToHEX(i), 0x28, temp));
-                    datalist.Add(msg);
+                        msg = Util.ConverByteToString(Util.AssemblyFrameAlarm(this.SocketInfo.Name, Util.IntToHEX(ii), Util.IntToHEX(i), 0x28));
+                        datalist.Add(msg);
+                    }
                 }
             }
+            else if (this.SocketInfo.IsDaily)
+            {
+                //send previouse 30 days of daily frozen data and set the continue
+                //daily frozen data make frame
+                //DateTime dtody = new DateTime
 
+                for (int ii = 2; ii < this.SocketInfo.metercounts; ii++)
+                {
+                    for (int i = 30; i > 0; i--)
+                    {
+                        //add 30 days daily frozen data every meter.
+                        //calculate the meternums and send the current day's all daily data.
+                        //maybe need divid several frames
+                        msg = Util.ConverByteToString(Util.AssemblyFrameDailyFrozen(this.SocketInfo.Name, Util.IntToHEX(ii), Util.IntToHEX(i), 0x28,dtody.AddDays(-i)));
+                        
+                    }
+                }
 
-            //for(int i=0; i< metercounts ; i++)
-            //    for(int j =0; j < 3; j++)
-            //    {
-            //       msg = Util.ConverByteToString( Util.AssemblyFrameAlarm(this.SocketInfo.Name, 0x06, 0x31, 0x28,temp));
-            //       datalist.Add(msg);
-            //    }
+            }
+            else if (this.SocketInfo.IsLoadProfile)
+            {
+                //load profile data make frame
+            }
+            else
+            {
+                //send heart beat
+                byte[] hdata = Util.GetByteDataByType(4, 0x01);
+                msg = Util.ConverByteToString(Util.AssemblyFrameBase(this.SocketInfo.Name, 0xC9, 0x7D, 0x02, hdata));
+                datalist.Add(msg);
+            }
 
             Thread.Sleep(6000);
             GetDataThreadFunc();
+        }
+
+        public void sendReplyData(int type)
+        {
+
+            DateTime dt = DateTime.Now;
+            byte[] data = new byte[40];
+
+            switch(type)
+            {
+                case 1: // time
+                    data = Util.AssemblyFrameSendCurrentTime(this.SocketInfo.Name, dt);
+                    break;
+                case 2: //current readings
+                    break;
+                case 3: //current relay status
+                    break;
+                default:
+                    break;
+            }
+
+            socketClient.Send(data);
+            this.SocketInfo.Data = Util.BytesToString(data);
+            this.SocketInfo.IsRefreshSend = true;
+
         }
         public void ListenMessage(object o, ReceivedEventArgs e)
         {
@@ -176,6 +229,12 @@ namespace SocketTool
                     //ReceivedHandler d = new ReceivedHandler(ListenMessage);
                     //this.Invoke(d, new object[] { o, e });
                     byte[] aa = e.Data;
+                    //check the receive buf whether is the read time frame
+                    //if it is , set a flag and send immediately reply
+
+                    if (Util.CheckCallTimeFrame(this.SocketInfo.Name,aa))
+                        sendReplyData(1);
+
                     this.SocketInfo.recData = aa;
                     this.SocketInfo.IsRefresh = true;
                     this.SocketInfo.Stopflag = false;
@@ -229,8 +288,6 @@ namespace SocketTool
             
             //if send data ok, then go out of here.
             //if test 3 times, please close the socket and connect agian.
-
-
 
         }
         
