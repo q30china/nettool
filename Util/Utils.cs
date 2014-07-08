@@ -854,7 +854,7 @@ namespace SocketTool
         /// <param name="alarmtype"></param>
         /// <param name="dtnow"></param>
         /// <returns></returns>
-        public static byte[] AssemblyFrameSendCurrentTime(string rtuAddr, DateTime dtnow)
+        public static byte[] AssemblyFrameSendCurrentTime(string rtuAddr, DateTime dtnow,byte seq)
         {
 
             byte[] frame;
@@ -887,7 +887,8 @@ namespace SocketTool
             //控制码
             frame[index++] = 0x02;
             frame[index++] = 0x0C;
-            frame[index++] = 0x6F;
+            //帧序号
+            frame[index++] = seq;
 
             //
             frame[index++] = 0x00;
@@ -913,57 +914,22 @@ namespace SocketTool
         public static Boolean CheckCallTimeFrame(string rtuAddr, byte[] data)
         {
 
-            byte[] frame;
-            int frameLength;
             long nrtuAddr;
             nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
 
-            frameLength = 26; //all data length for send replay datetime frame
+           // frameLength = 26; //all data length for send replay datetime frame
 
-            frame = new byte[frameLength];
-            int index = 0;
+            if (data[12] == 0x0C)
+                return true;
 
-            frame[index++] = 0x68;
-
-            frame[index++] = 0x4A;
-            frame[index++] = 0x00;
-            frame[index++] = 0x4A;
-            frame[index++] = 0x00;
-
-            frame[index++] = 0x68;
-            frame[index++] = 0x88;
-
-
-            //集中器地址
-            frame[index++] = (byte)((nrtuAddr >> 16) & 0xFF);
-            frame[index++] = (byte)((nrtuAddr >> 24) & 0xFF);
-            frame[index++] = (byte)((nrtuAddr) & 0xFF);
-            frame[index++] = (byte)((nrtuAddr >> 8) & 0xFF);
-
-            //控制码
-            frame[index++] = 0x02;
-            frame[index++] = 0x0C;
-            frame[index++] = 0x6F;
-
-            //
-            frame[index++] = 0x00;
-            frame[index++] = 0x00;
-            frame[index++] = 0x02;
-            frame[index++] = 0x00;
-
-            DateTime dt = DateTime.Now;
-            byte[] datebytes = DateTimeToByteArray(dt);
-
-            for (int j = 5; j >= 0; j--)
-                frame[index++] = datebytes[j];
             //采集器采集时间  秒 分 时 日 月 年
 
             //校验码
-            frame[index++] = CheckSum(frame, 6, index - 6);
+            //frame[index++] = CheckSum(frame, 6, index - 6);
 
-            frame[index++] = 0x16;
+            //frame[index++] = 0x16;
 
-            return true;
+            return false;
 
         }
 
@@ -1075,7 +1041,7 @@ namespace SocketTool
                 };
         }
 
-        public byte[] PickFrame(byte[] recvbuf, ref int beginIndex, int endIndex)
+        public static byte[] PickFrame(byte[] recvbuf,  ref int beginIndex, int endIndex)
         {
             byte[] frame = new byte[20];
             int recvLen;
@@ -1083,8 +1049,8 @@ namespace SocketTool
 
             while (true)
             {
-                recvLen = (endIndex - beginIndex + recvbuf.Length) % recvbuf.Length;
-                if (recvLen < 14)       //1+2+2+1+1+5+(?)+1+1
+
+                if (recvbuf.Length != 20)
                     return null;
 
                 // 1 校验启动位
@@ -1101,6 +1067,7 @@ namespace SocketTool
                 }
 
 
+
                 // 2 校验2个长度是否一致
                 //if (recvbuf[(beginIndex + 1) % recvbuf.Length] != recvbuf[(beginIndex + 3) % recvbuf.Length])
                 //{
@@ -1112,16 +1079,14 @@ namespace SocketTool
                 //    beginIndex = (++beginIndex) % recvbuf.Length;
                 //    continue;
                 //}
-                if (recvbuf.Length != 20)
-                    return null;
 
 
                 // 3 校验规约标识位
-                if ((recvbuf[(beginIndex + 1) % recvbuf.Length] & 0x4B) != 0x01)
-                {
-                    beginIndex = (++beginIndex) % recvbuf.Length;
-                    continue;
-                }
+                //if ((recvbuf[(beginIndex + 1) % recvbuf.Length] & 0x4B) != 0x01)
+                //{
+                //    beginIndex = (++beginIndex) % recvbuf.Length;
+                //    continue;
+                //}
 
                 // 4 检查是否接收到完整的数据帧
                 //frameLen = recvbuf[(beginIndex + 1) % recvbuf.Length] >> 2
@@ -1134,7 +1099,7 @@ namespace SocketTool
 
 
                 // 5 检查帧结束符 
-                if (recvbuf[(beginIndex + 13) % recvbuf.Length] != 0x16)
+                if (recvbuf[(beginIndex + 19) % recvbuf.Length] != 0x16)
                 {
                     beginIndex = (++beginIndex) % recvbuf.Length;
                     continue;

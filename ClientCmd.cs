@@ -197,7 +197,7 @@ namespace SocketTool
             GetDataThreadFunc();
         }
 
-        public void sendReplyData(int type)
+        public void sendReplyData(int type,byte seq)
         {
 
             DateTime dt = DateTime.Now;
@@ -206,7 +206,7 @@ namespace SocketTool
             switch(type)
             {
                 case 1: // time
-                    data = Util.AssemblyFrameSendCurrentTime(this.SocketInfo.Name, dt);
+                    data = Util.AssemblyFrameSendCurrentTime(this.SocketInfo.Name, dt, seq);
                     break;
                 case 2: //current readings
                     break;
@@ -215,9 +215,10 @@ namespace SocketTool
                 default:
                     break;
             }
-
+            string msg = ParseUtil.ToHexString(data, data.Length);
+            
             socketClient.Send(data);
-            this.SocketInfo.Data = Util.BytesToString(data);
+            this.SocketInfo.Data = Util.AddSpaceToFrame(msg);
             this.SocketInfo.IsRefreshSend = true;
 
         }
@@ -229,12 +230,19 @@ namespace SocketTool
                     //ReceivedHandler d = new ReceivedHandler(ListenMessage);
                     //this.Invoke(d, new object[] { o, e });
                     byte[] aa = e.Data;
+                    byte seq;
                     //check the receive buf whether is the read time frame
                     //if it is , set a flag and send immediately reply
+                    int beginind = 0;
+                    byte[] recBuf = Util.PickFrame(aa, ref beginind, 20);
+                    seq = recBuf[13];
 
-                    if (Util.CheckCallTimeFrame(this.SocketInfo.Name,aa))
-                        sendReplyData(1);
+                    if (Util.CheckCallTimeFrame(this.SocketInfo.Name,recBuf))
+                        sendReplyData(1,seq);
 
+                    //if (Util.CheckCallTimeFrame(this.SocketInfo.Name, recBuf))
+                    //    sendReplyData(2,seq);
+                 
                     this.SocketInfo.recData = aa;
                     this.SocketInfo.IsRefresh = true;
                     this.SocketInfo.Stopflag = false;
