@@ -155,7 +155,7 @@
             this.txtSendDelay.Name = "txtSendDelay";
             this.txtSendDelay.Size = new System.Drawing.Size(100, 25);
             this.txtSendDelay.TabIndex = 11;
-            this.txtSendDelay.Text = "10";
+            this.txtSendDelay.Text = "120";
             // 
             // labInterval
             // 
@@ -202,7 +202,7 @@
             this.txtMeterNum.Name = "txtMeterNum";
             this.txtMeterNum.Size = new System.Drawing.Size(100, 25);
             this.txtMeterNum.TabIndex = 16;
-            this.txtMeterNum.Text = "3";
+            this.txtMeterNum.Text = "5";
             // 
             // txtLoadInterval
             // 
