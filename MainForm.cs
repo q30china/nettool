@@ -46,11 +46,13 @@ namespace SocketTool
             {
                 //启动程序时，提示是否自动load已经保存的配置文件
                 //因为大数据量测试时，初始化这个配置文件需要时间，需确认下。也可通过后来的LoadDefault实现
-                DialogResult result = MessageBox.Show("Are you want to load and auto start the auto testing ?  ", "Load", MessageBoxButtons.YesNo);
-                if (result == DialogResult.No)
-                    loadf = false;
-                else
-                    loadf = true;
+                //DialogResult result = MessageBox.Show("Are you want to load and auto start the auto testing ?  ", "Load", MessageBoxButtons.YesNo);
+                //if (result == DialogResult.No)
+                //    loadf = false;
+                //else
+                //    loadf = true;
+
+                loadf = false;
 
                 if (loadf)
                 {

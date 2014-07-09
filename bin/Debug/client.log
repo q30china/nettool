@@ -760,3 +760,543 @@
 记录时间：2014-07-01 18:04:28,584 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
 记录时间：2014-07-01 18:04:31,711 日志：未将对象引用设置到对象的实例。
 记录时间：2014-07-01 18:04:31,715 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:40,086 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:40,197 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:40,227 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:40,227 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:40,285 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:40,292 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:40,379 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:40,388 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:40,516 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:40,527 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:40,601 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:40,610 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:40,994 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:41,004 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:41,101 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:41,105 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:41,222 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:41,231 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:41,326 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:41,328 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:41,480 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:41,490 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:41,603 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:41,605 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:41,960 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:41,962 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:42,103 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:42,114 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:42,295 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:42,298 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:42,351 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:42,354 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:42,555 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:42,558 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:42,684 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:42,687 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:43,023 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:43,026 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:43,087 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:43,089 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:43,233 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:43,235 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:43,397 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:43,399 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:43,496 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:43,498 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:43,597 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:43,600 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:44,123 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:44,125 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:44,268 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:44,270 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:44,358 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:44,361 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:44,450 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:44,452 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:44,638 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:44,641 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:44,704 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:44,707 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:44,988 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:44,990 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:45,082 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:45,085 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:45,187 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:45,189 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:45,250 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:45,252 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:45,404 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:45,406 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:45,513 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:45,515 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:45,704 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:45,706 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:46,149 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:46,152 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:46,349 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:46,351 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:46,425 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:46,427 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:46,632 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:46,634 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:46,841 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:46,846 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:47,154 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:47,156 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:47,221 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:47,223 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:47,354 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:47,356 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:47,446 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:47,449 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:47,515 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:47,518 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:47,703 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:47,705 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:48,156 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:48,159 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:48,297 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:48,299 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:48,409 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:48,411 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:48,505 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:48,508 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:48,692 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:48,709 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:49,239 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:49,242 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:49,480 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:49,483 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:49,596 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:49,598 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:49,807 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:49,810 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:50,392 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:50,395 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:50,504 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:50,506 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:50,605 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:50,607 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:50,823 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:50,826 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:51,243 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:51,246 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:51,447 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:51,449 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:51,667 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:51,670 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:51,858 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:51,861 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:52,476 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:52,478 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:52,569 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:52,572 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:52,693 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:52,695 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:52,908 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:52,910 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:53,530 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:53,533 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:53,749 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:53,752 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:54,004 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:54,007 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:54,535 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:54,538 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:54,797 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:54,799 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:54,989 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:54,991 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:55,609 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:55,611 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:55,850 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:55,853 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:56,100 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:56,103 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:56,576 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:56,579 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:56,798 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:56,801 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:57,034 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:57,037 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:57,700 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:57,703 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:57,955 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:57,958 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:58,682 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:58,685 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:58,916 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:58,919 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:59,135 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:59,138 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:27:59,808 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:27:59,811 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:00,020 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:00,023 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:00,858 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:00,860 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:00,908 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:00,910 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:01,133 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:01,135 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:01,775 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:01,777 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:02,074 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:02,077 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:02,726 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:02,731 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:02,859 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:02,862 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:03,009 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:03,011 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:03,261 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:03,264 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:03,837 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:03,840 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:04,069 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:04,071 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:04,317 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:04,319 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:05,031 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:05,036 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:05,290 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:05,295 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:05,826 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:05,830 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:06,041 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:06,044 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:28:06,140 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:28:06,142 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:13,023 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:13,063 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:13,102 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:13,106 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:13,216 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:13,226 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:13,305 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:13,307 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:13,425 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:13,436 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:13,518 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:13,521 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:13,830 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:13,839 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:13,940 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:13,942 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:14,045 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:14,055 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:14,192 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:14,202 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:14,288 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:14,292 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:14,420 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:14,422 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:14,566 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:14,569 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:14,914 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:14,917 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:15,020 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:15,022 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:15,165 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:15,167 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:15,222 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:15,224 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:15,372 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:15,375 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:15,430 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:15,442 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:15,516 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:15,518 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:15,680 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:15,691 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:15,985 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:15,990 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:16,134 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:16,137 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:16,185 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:16,188 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:16,327 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:16,329 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:16,458 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:16,465 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:16,572 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:16,593 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:17,051 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:17,056 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:17,247 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:17,254 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:17,308 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:17,313 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:17,424 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:17,427 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:17,507 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:17,509 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:29:17,689 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:29:17,696 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:00,088 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:00,129 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:00,151 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:00,161 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:00,251 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:00,253 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:00,361 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:00,371 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:00,448 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:00,451 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:00,568 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:00,578 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:00,664 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:00,666 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:01,001 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:01,003 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:01,115 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:01,125 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:01,219 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:01,223 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:01,357 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:01,362 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:01,480 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:01,483 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:01,589 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:01,591 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:01,984 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:01,986 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:02,086 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:02,088 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:02,176 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:02,181 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:02,294 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:02,296 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:02,396 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:02,398 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:02,539 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:02,541 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:02,608 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:02,610 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:03,016 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:03,018 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:03,056 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:03,058 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:03,128 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:03,130 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:03,282 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:03,287 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:03,348 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:03,351 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:03,507 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:03,514 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:03,669 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:03,676 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:04,164 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:04,171 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:04,253 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:04,260 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:04,320 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:04,327 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:04,403 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:04,408 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:04,559 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:04,566 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:04,629 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:04,636 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:30:04,780 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:30:04,785 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:33:26,867 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:33:26,884 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:33:29,694 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:33:29,696 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:33:52,514 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:33:52,521 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:33:55,861 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:33:55,865 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:33:57,699 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:33:57,705 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:34:00,643 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:34:00,650 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:34:02,687 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:34:02,694 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:34:05,737 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:34:05,744 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:34:07,679 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:34:07,685 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:34:10,623 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:34:10,630 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:35:30,872 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:35:30,879 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:01,066 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:01,073 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:01,602 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:01,608 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:01,942 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:01,948 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:02,180 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:02,187 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:02,316 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:02,323 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:02,451 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:02,458 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:02,579 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:02,583 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:02,707 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:02,714 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:02,845 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:02,852 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:02,983 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:02,990 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:03,118 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:03,121 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:03,249 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:03,255 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:03,386 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:03,393 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:36:03,623 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:36:03,630 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:15,771 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:15,778 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:16,410 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:16,417 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:16,849 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:16,855 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:17,286 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:17,292 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:17,625 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:17,632 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:17,858 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:17,865 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:18,093 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:18,100 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:18,424 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:18,428 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:18,646 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:18,650 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:18,879 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:18,886 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:19,210 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:19,215 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:19,441 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:19,448 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:19,680 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:19,687 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:19,920 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:19,927 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:20,153 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:20,161 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:20,389 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:20,396 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:20,524 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:20,531 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:20,765 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:20,771 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:20,999 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:21,005 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:21,238 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:21,245 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:21,474 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:21,481 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:21,709 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:21,714 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:21,942 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:21,949 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:22,177 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:22,184 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:22,416 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:22,423 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:22,650 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:22,657 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:22,884 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:22,890 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:23,116 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:23,122 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:23,343 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:23,348 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:23,575 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:23,582 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:23,798 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:23,802 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:24,028 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:24,035 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:24,267 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:24,274 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:24,502 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:24,509 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:52,909 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:52,917 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:54,961 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:54,967 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:57,581 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:57,592 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:37:59,984 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:37:59,991 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:38:00,124 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:38:00,132 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:38:03,566 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:38:03,573 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:00,564 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:00,571 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:00,701 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:00,708 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:00,938 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:00,945 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:01,073 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:01,080 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:01,211 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:01,218 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:01,345 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:01,352 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:36,388 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:36,395 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:36,831 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:36,837 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:36,966 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:36,973 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:37,204 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:37,211 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:37,441 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:37,448 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:37,679 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:37,685 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:37,916 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:37,923 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:38,154 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:38,160 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:39:38,389 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:39:38,394 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:41,860 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:41,867 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:42,199 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:42,205 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:42,334 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:42,340 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:42,469 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:42,475 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:42,601 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:42,609 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:42,736 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:42,742 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:42,873 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:42,879 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:43,007 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:43,014 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:43,140 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:43,147 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:43,277 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:43,283 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:55:43,411 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:55:43,419 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 07:59:54,045 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 07:59:54,852 日志：   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 238
+记录时间：2014-07-09 08:44:16,444 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 08:44:16,482 日志：   在 SocketTool.Util.CheckCallTimeFrame(String rtuAddr, Byte[] data) 位置 e:\github\nettool\Util\Utils.cs:行号 922
+   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 243
+记录时间：2014-07-09 08:44:17,407 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 08:44:17,414 日志：   在 SocketTool.Util.CheckCallTimeFrame(String rtuAddr, Byte[] data) 位置 e:\github\nettool\Util\Utils.cs:行号 922
+   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 243
+记录时间：2014-07-09 08:44:17,832 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 08:44:17,836 日志：   在 SocketTool.Util.CheckCallTimeFrame(String rtuAddr, Byte[] data) 位置 e:\github\nettool\Util\Utils.cs:行号 922
+   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 243
+记录时间：2014-07-09 08:44:18,058 日志：未将对象引用设置到对象的实例。
+记录时间：2014-07-09 08:44:18,065 日志：   在 SocketTool.Util.CheckCallTimeFrame(String rtuAddr, Byte[] data) 位置 e:\github\nettool\Util\Utils.cs:行号 922
+   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 243

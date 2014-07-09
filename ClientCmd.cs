@@ -143,7 +143,7 @@ namespace SocketTool
             // how many meters, how many alarms, how many data.
             // assembly frame and load into datalist string.
 
-            int[] alarmcode = new int[] { 60,20 };
+            int[] alarmcode = new int[] { this.SocketInfo.timeinterval,20 };
             byte[] alarmtype = new byte[] { 0x28, 0x2F };
             //byte[] temp = new byte[] { 11, 22, 33 };
             string msg = "";
@@ -235,14 +235,21 @@ namespace SocketTool
                     //if it is , set a flag and send immediately reply
                     int beginind = 0;
                     byte[] recBuf = Util.PickFrame(aa, ref beginind, 20);
-                    seq = recBuf[13];
+                    int pointid;
+                    byte seqno;
 
-                    if (Util.CheckCallTimeFrame(this.SocketInfo.Name,recBuf))
-                        sendReplyData(1,seq);
+                    if (recBuf != null)
+                    {
 
-                    //if (Util.CheckCallTimeFrame(this.SocketInfo.Name, recBuf))
-                    //    sendReplyData(2,seq);
+                        if (Util.CheckCallTimeFrame(this.SocketInfo.Name, recBuf, out seqno)) ;
+                            sendReplyData(1, seq);
+
+                        if (Util.CheckCallCurrentReading(this.SocketInfo.Name, recBuf,out pointid,out seqno))
+                            sendReplyData(2,seq);
                  
+                    }
+
+                    
                     this.SocketInfo.recData = aa;
                     this.SocketInfo.IsRefresh = true;
                     this.SocketInfo.Stopflag = false;

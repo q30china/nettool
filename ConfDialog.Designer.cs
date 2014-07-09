@@ -93,7 +93,7 @@
             this.txtClientCounts.Name = "txtClientCounts";
             this.txtClientCounts.Size = new System.Drawing.Size(100, 25);
             this.txtClientCounts.TabIndex = 4;
-            this.txtClientCounts.Text = "10";
+            this.txtClientCounts.Text = "20";
             // 
             // chkConnAll
             // 
@@ -210,7 +210,7 @@
             this.txtLoadInterval.Name = "txtLoadInterval";
             this.txtLoadInterval.Size = new System.Drawing.Size(100, 25);
             this.txtLoadInterval.TabIndex = 17;
-            this.txtLoadInterval.Text = "30";
+            this.txtLoadInterval.Text = "5";
             // 
             // labMeterNum
             // 

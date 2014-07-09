@@ -23,7 +23,7 @@ namespace SocketTool.Core
         public InitPara()
         {
             initServerPort = 9131;
-            initServerIp = "192.168.5.131";
+            initServerIp = "172.16.201.141";
             initClientCounts = "10";
             IsStart = true;
             IsGui = false;

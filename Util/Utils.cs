@@ -933,6 +933,40 @@ namespace SocketTool
 
         }
 
+        public static Boolean CheckCallCurrentReading(string rtuAddr, byte[] data, out int pid, out byte seq)
+        {
+
+            long nrtuAddr;
+            nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
+
+           // frameLength = 26; //all data length for send replay datetime frame
+
+            //if (data[12] == 0x0C)
+            //    return true;
+
+            //(Util.BytesToInt(data[15])-1)*8 + BytesToInt(data[14])
+            seq = data[13];
+
+            pid  = (Util.BCDByteToInt(data[15]) - 1) * 8 + Util.BCDByteToBitInt(data[14]);
+
+            int dataid = (Util.BCDByteToInt(data[17])) * 8 + Util.BCDByteToBitInt(data[16]);
+
+            if (dataid == 0x1F9)
+                return true;
+            
+            //采集器采集时间  秒 分 时 日 月 年
+
+            //校验码
+            //frame[index++] = CheckSum(frame, 6, index - 6);
+
+            //frame[index++] = 0x16;
+
+            return false;
+
+            
+
+        }
+
         /// <summary>
         /// 求和校验 
         /// </summary>
@@ -1121,6 +1155,142 @@ namespace SocketTool
                 //beginIndex = (beginIndex + frame.Length) % recvbuf.Length;
                 return frame;
             }
+        }
+
+        /// <summary>
+        /// 转换BCD码的值为16进制
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static byte GetByteFromBCD(byte value)
+        {
+            if ((value & 0x0f) > 9 || value > 0x99)
+                return 0;
+            return (byte)((((value & 0xf0) >> 4) * (byte)10) + (value & 0x0f));
+        }
+
+        /// <summary>
+        /// 转换16进制值为BCD码
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static byte GetBCDFromByte(byte value)
+        {
+            if (value > 99)        //值超过了BCD码的表示范围
+                return 0xFF;
+            return (byte)(((value / 10) * 0x10) + (value % 10));
+        }
+
+        public static byte GetBCDFromByte(int value)
+        {
+            return GetBCDFromByte((byte)value);
+        }
+
+        /// <summary>
+        /// BCD码转化为int
+        /// </summary>
+        /// <param name="value">BCD字节数组</param>
+        /// <param name="startIndex">开始位置</param>
+        /// <param name="len">字节数</param>
+        /// <returns>返回值</returns>
+        public static int GetIntFromBCD(byte[] value, int startIndex, int len)
+        {
+            int intValue = 0;
+            byte tmpbytes;
+            for (int i = 0; i < len; i++)
+            {
+                tmpbytes = GetByteFromBCD(value[startIndex + i]);
+                if (tmpbytes == 0xFF)
+                    return -1;
+                intValue += tmpbytes * (int)(Math.Pow(10, i * 2));
+            }
+            return intValue;
+        }
+
+        /// <summary>
+        /// BCD码转化为int
+        /// </summary>
+        /// <param name="value">BCD字节数组,高位在前，地位在后</param>
+        /// <param name="startIndex">开始位置</param>
+        /// <param name="len">字节数</param>
+        /// <returns>返回值</returns>
+        public static int GetIntFromBCD_SEQ(byte[] value, int startIndex, int len)
+        {
+            int intValue = 0;
+            byte tmpbytes;
+            for (int i = 0; i < len; i++)
+            {
+                tmpbytes = GetByteFromBCD(value[startIndex + i]);
+                if (tmpbytes == 0xFF)
+                    return -1;
+                intValue += tmpbytes * (int)(Math.Pow(10, (len - 1 - i) * 2));
+            }
+            return intValue;
+        }
+
+
+        /// <summary>
+        /// 16进制Byte转换成16进制字符串：,0xD6-->'D','6'  0x01-->'0','1'
+        /// </summary>
+        /// <param name="bHex"></param>
+        /// <returns></returns>
+        private string GetStrFromHex(byte bHex)
+        {
+            string strTemp = "";
+            strTemp = ((bHex >> 4)).ToString("X");
+            strTemp += (bHex & 0x0F).ToString("X");
+            return strTemp;
+
+        }
+
+        ////16进制字符串转换成16进制Byte："D6"-->0xD6        
+        public static byte HexStrToByte(string hexChar)
+        {
+            if (hexChar.Length > 2 || hexChar.Length < 1)
+                throw new Exception(hexChar);
+            return byte.Parse(hexChar, System.Globalization.NumberStyles.HexNumber);
+        }
+
+        /// <summary>
+        /// 转换BCD码的值为16进制
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static int GetBCDValue(byte value)
+        {
+            if ((value & 0x0f) > 9 || value > 0x99)
+                return -1;
+            return (((value & 0xf0) >> 4) * (byte)10) + (value & 0x0f);
+        }
+
+        public static int BCDByteToInt(byte b)
+        {
+
+            int t;
+
+            t = b & 0x0F;
+            if (t < 0 || t > 9)
+                throw new ArgumentException("not a BCD byte: " + b.ToString("X02"));
+
+
+            t = (b >> 4) & 0x0F;
+            if (t < 0 || t > 9)
+                throw new ArgumentException("not a BCD byte: " + b.ToString("X02"));
+
+            return (b & 0x0F) + ((b >> 4) & 0x0F) * 10;
+        }
+
+        public static int BCDByteToBitInt(byte b)
+        {
+            int t;
+            t = b & 0xFF;
+
+            for (int i = 1; i <= 8; i++)
+            {
+                if (((t >> i) & 0xFF) == 0)
+                    return i;
+            }
+            return 0;
         }
     }
 }
