@@ -665,7 +665,7 @@ namespace SocketTool
         /// <param name="dtnow"></param>
         /// <returns></returns>
         public static byte[] AssemblyFrameDailyFrozen(string rtuAddr,
-          byte pointid, byte alarmid, byte alarmtype, DateTime dtnow)
+          int beginid, int endid, byte alarmtype, DateTime dtnow)
         {
 
             byte[] frame;
@@ -676,7 +676,7 @@ namespace SocketTool
             nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
 
             //frameLength = (data == null) ? 16 : 16 + data.Length;
-            frameLength = 40;
+            frameLength = 6 + 2;
 
             frame = new byte[frameLength];
             int index = 0;
@@ -734,11 +734,11 @@ namespace SocketTool
             //frame[index++] = 0x14;
 
             //测量点号码
-            frame[index++] = pointid;
+            //frame[index++] = pointid;
             frame[index++] = 0x00;
 
             //表事件
-            frame[index++] = alarmid;
+            //frame[index++] = alarmid;
 
 
             //表计事项实际产生时间 分 时 日 月 年 秒
