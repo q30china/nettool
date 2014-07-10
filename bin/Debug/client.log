@@ -1300,3 +1300,13 @@
 记录时间：2014-07-09 08:44:18,058 日志：未将对象引用设置到对象的实例。
 记录时间：2014-07-09 08:44:18,065 日志：   在 SocketTool.Util.CheckCallTimeFrame(String rtuAddr, Byte[] data) 位置 e:\github\nettool\Util\Utils.cs:行号 922
    在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 243
+记录时间：2014-07-10 12:58:44,804 日志：索引超出了数组界限。
+记录时间：2014-07-10 12:58:45,228 日志：   在 SocketTool.Util.AddStringToArray(Byte[]& buffer, Int32& startIndex, String value, Int32 length) 位置 e:\github\nettool\Util\Utils.cs:行号 1429
+   在 SocketTool.Util.AssemblyFrameSendCurrentReadings(String rtuAddr, Byte seq, Int32 pointid) 位置 e:\github\nettool\Util\Utils.cs:行号 976
+   在 SocketTool.ClientCmd.sendReplyData(Int32 type, Byte seq, Int32 pid) 位置 e:\github\nettool\ClientCmd.cs:行号 212
+   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 249
+记录时间：2014-07-10 13:00:10,273 日志：索引超出了数组界限。
+记录时间：2014-07-10 13:00:10,276 日志：   在 SocketTool.Util.AddStringToArray(Byte[]& buffer, Int32& startIndex, String value, Int32 length) 位置 e:\github\nettool\Util\Utils.cs:行号 1429
+   在 SocketTool.Util.AssemblyFrameSendCurrentReadings(String rtuAddr, Byte seq, Int32 pointid) 位置 e:\github\nettool\Util\Utils.cs:行号 976
+   在 SocketTool.ClientCmd.sendReplyData(Int32 type, Byte seq, Int32 pid) 位置 e:\github\nettool\ClientCmd.cs:行号 212
+   在 SocketTool.ClientCmd.ListenMessage(Object o, ReceivedEventArgs e) 位置 e:\github\nettool\ClientCmd.cs:行号 249

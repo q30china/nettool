@@ -48,6 +48,31 @@ namespace SocketTool
         }
 
         /// <summary>
+        /// Converts a string to a byte array
+        /// </summary>
+        /// <param name="s">String to convert</param>
+        /// <returns>Byte array made from the string</returns>
+        public static byte[] StringValueToBytes(string s,int len)
+        {
+            byte[] tmp = new byte[len];
+            string ts = s;
+            if((s.Length > len*2 )|| (s.Length <0) )
+                return tmp;
+
+            for (int j = 0; j < (len * 2 - s.Length); j++)
+                ts = "0" + ts;
+
+
+            for (int i = 0; i < len; i++)
+            {
+
+                tmp[i] = ConverStringToByte(ts.Substring(i * 2, 2));
+            }
+
+            return tmp;
+        }
+
+        /// <summary>
         /// Converts a byte array to a string
         /// </summary>
         /// <param name="b">Byte array to convert</param>
@@ -911,7 +936,116 @@ namespace SocketTool
 
         }
 
-        public static Boolean CheckCallTimeFrame(string rtuAddr, byte[] data)
+        public static byte[] AssemblyFrameSendCurrentReadings(string rtuAddr, byte seq,int pointid)
+        {
+
+            byte[] frame;
+            int frameLength;
+            long nrtuAddr;
+            nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
+
+            frameLength = 51; //all data length for send replay datetime frame
+
+            frame = new byte[frameLength];
+            int index = 0;
+
+            frame[index++] = 0x68;
+
+            frame[index++] = 0xAE;
+            frame[index++] = 0x00;
+            frame[index++] = 0xAE;
+            frame[index++] = 0x00;
+
+            frame[index++] = 0x68;
+            frame[index++] = 0x88;
+
+
+            //集中器地址
+            frame[index++] = (byte)((nrtuAddr >> 16) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 24) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr) & 0xFF);
+            frame[index++] = (byte)((nrtuAddr >> 8) & 0xFF);
+
+            //控制码
+            frame[index++] = 0x02;
+            frame[index++] = 0x0C; //一类数据
+            //帧序号
+            frame[index++] = seq;  //帧序号
+
+            byte[] pid = new byte[2];
+            // pid = 
+            //pointid 拆分
+            pid = Util.GetPidFromInt(pointid);
+
+            frame[index++] = pid[0];
+            frame[index++] = pid[1];
+
+            //F129 dataid 抄读正向有功总和4费率电量
+            frame[index++] = 0x01;
+            frame[index++] = 0x10;
+
+            DateTime dtnow = DateTime.Now;
+            byte[] datebytes = DateTimeToByteArray(dtnow);
+
+            for (int j = 4; j >= 0; j--)
+                frame[index++] = datebytes[j];
+            //采集器采集时间  分 时 日 月 年
+
+            frame[index++] = 0x04;
+
+            //正向有功总
+            Random ro = new Random ();
+            int val = ro.Next(10,99999);
+
+            double values = val + ro.NextDouble();
+
+            values = Math.Round(values,4);
+
+            string []str = values.ToString().Split('.');
+
+            AddStringToArray2(ref frame, ref index, str[1], 2);
+            AddStringToArray2(ref frame, ref index, str[0], 3);
+
+
+            //balance_tmp = ((frame[index] >> 4) * 10 + (frame[index] & 0x0F))
+            //                + ((frame[1 + index] >> 4) * 10 + (frame[1 + index] & 0x0F)) * 100
+            //                + ((frame[2 + index] >> 4) * 10 + (frame[2 + index] & 0x0F)) * 10000
+            //                + ((frame[3 + index] >> 4) * 10 + (frame[3 + index] & 0x0F)) * 1000000;
+            //费率1
+            str = Math.Round(values*0.15,4).ToString().Split('.');
+            AddStringToArray2(ref frame, ref index, str[1], 2);
+            AddStringToArray2(ref frame, ref index, str[0], 3);
+
+ 
+            //费率2
+            str = Math.Round(values * 0.35, 4).ToString().Split('.');
+            AddStringToArray2(ref frame, ref index, str[1], 2);
+            AddStringToArray2(ref frame, ref index, str[0], 3);
+
+
+
+            //费率3
+            str = Math.Round(values * 0.45, 4).ToString().Split('.');
+            AddStringToArray2(ref frame, ref index, str[1], 2);
+            AddStringToArray2(ref frame, ref index, str[0], 3);
+
+
+            //费率4
+            str = Math.Round(values * 0.05, 4).ToString().Split('.');
+            AddStringToArray2(ref frame, ref index, str[1], 2);
+            AddStringToArray2(ref frame, ref index, str[0], 3);
+
+
+
+            //校验码
+            frame[index++] = CheckSum(frame, 6, index - 6);
+
+            frame[index++] = 0x16;
+
+            return frame;
+
+        }
+        public static Boolean CheckCallTimeFrame(string rtuAddr, byte[] data, out byte seq)
         {
 
             long nrtuAddr;
@@ -919,7 +1053,17 @@ namespace SocketTool
 
            // frameLength = 26; //all data length for send replay datetime frame
 
-            if (data[12] == 0x0C)
+            seq = data[13];
+
+            if (data[12] != 0x0C)
+                return false;
+
+            byte c1 = Util.GetBCDFromByte(data[17]);
+
+            int dataid = (Util.BCDByteToInt(c1)) * 8 + Util.BCDByteToBitInt(data[16]);
+
+
+            if (dataid == 0x02) //current time
                 return true;
 
             //采集器采集时间  秒 分 时 日 月 年
@@ -939,19 +1083,23 @@ namespace SocketTool
             long nrtuAddr;
             nrtuAddr = long.Parse(rtuAddr, NumberStyles.HexNumber);
 
-           // frameLength = 26; //all data length for send replay datetime frame
 
-            //if (data[12] == 0x0C)
-            //    return true;
-
-            //(Util.BytesToInt(data[15])-1)*8 + BytesToInt(data[14])
             seq = data[13];
+
+
 
             pid  = (Util.BCDByteToInt(data[15]) - 1) * 8 + Util.BCDByteToBitInt(data[14]);
 
-            int dataid = (Util.BCDByteToInt(data[17])) * 8 + Util.BCDByteToBitInt(data[16]);
 
-            if (dataid == 0x1F9)
+            if (data[12] != 0x0C)
+                return false;
+
+            byte c1 = Util.GetBCDFromByte(data[17]);
+
+            int dataid = (Util.BCDByteToInt(c1)) * 8 + Util.BCDByteToBitInt(data[16]);
+
+
+            if (dataid == 129) //current reading
                 return true;
             
             //采集器采集时间  秒 分 时 日 月 年
@@ -1291,6 +1439,63 @@ namespace SocketTool
                     return i;
             }
             return 0;
+        }
+
+        public static byte[] GetPidFromInt(int a)
+        {
+            int t1, t2;
+            byte[] b = new byte[2];
+            t1 = a & 0x0F;
+            t2 = a & 0xF0;
+
+            int m = a % 8 ;
+            int n = a / 8 ;
+
+            b[0] = Util.IntToHEX(0x80 >>(8-m));
+            b[1] = Util.IntToHEX(n + 1);
+            return b;
+
+
+        }
+        public static void AddStringToArray(ref byte[] buffer, ref int startIndex, string value, int length)
+        {
+
+            byte[] arr = System.Text.Encoding.ASCII.GetBytes(value);
+            if (arr.Length > 20)
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    buffer[startIndex++] = arr[i];
+                }
+            }
+            else
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    buffer[startIndex++] = arr[i];
+                }
+                for (int i = arr.Length; i < 20; i++)
+                {
+                    buffer[startIndex++] = 0xFF;
+                }
+            }
+
+        }
+        public static void AddStringToArray2(ref byte[] buffer, ref int startIndex, string value, int length)
+        {
+
+            //byte[] arr = System.Text.Encoding.GetBytes(value);
+            //value = value.ToString()
+            byte[] arr = Util.StringValueToBytes(value, length);
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                buffer[startIndex++] = arr[arr.Length-1-i];
+            }
+            
+            
+         
+
         }
     }
 }

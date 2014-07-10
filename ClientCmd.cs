@@ -197,7 +197,7 @@ namespace SocketTool
             GetDataThreadFunc();
         }
 
-        public void sendReplyData(int type,byte seq)
+        public void sendReplyData(int type,byte seq, int pid)
         {
 
             DateTime dt = DateTime.Now;
@@ -209,6 +209,7 @@ namespace SocketTool
                     data = Util.AssemblyFrameSendCurrentTime(this.SocketInfo.Name, dt, seq);
                     break;
                 case 2: //current readings
+                    data = Util.AssemblyFrameSendCurrentReadings(this.SocketInfo.Name, seq,pid);
                     break;
                 case 3: //current relay status
                     break;
@@ -241,11 +242,11 @@ namespace SocketTool
                     if (recBuf != null)
                     {
 
-                        if (Util.CheckCallTimeFrame(this.SocketInfo.Name, recBuf, out seqno)) ;
-                            sendReplyData(1, seq);
+                        if (Util.CheckCallTimeFrame(this.SocketInfo.Name, recBuf, out seqno))
+                            sendReplyData(1, seqno,0);
 
                         if (Util.CheckCallCurrentReading(this.SocketInfo.Name, recBuf,out pointid,out seqno))
-                            sendReplyData(2,seq);
+                            sendReplyData(2, seqno, pointid);
                  
                     }
 
